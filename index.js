@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 app.get('/', (request,response) => {
-    response.sendFile(__dirname + '/public/index.html');
+    response.sendFile(__dirname + '/public/pages/index.html');
 });
 
 app.set('port', 3000);
